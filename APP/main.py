@@ -13,7 +13,7 @@ def run():
     conexion = ConectorOracle(usuario, password, base_datos)
     reporte = Reportes(conexion)
 
-    reporte.visualizar_pedidos_por_cliente()
+    reporte.visualizar_gasto_por_cliente()
 
 
 if __name__ == "__main__":
