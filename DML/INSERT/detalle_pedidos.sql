@@ -24,22 +24,17 @@ VALUES (1, 1,'no se el precio' , 2);
 -- POR ALGUNA RAZON MI ID PEDIDO ES 2 Y YA NO 1, ODIO ORACLE!
 BEGIN
 -- pedido, producto, cantidad
-    agregar_detalle_pedido(2, 2, 1);  
+    paquete_tienda_idat.agregar_detalle_pedido(2, 2, 1);  
 END;
 /
 
 -- las ram
 BEGIN
 -- pedido, producto, cantidad
-    agregar_detalle_pedido(2, 1, 2);  
+    paquete_tienda_idat.agregar_detalle_pedido(2, 1, 2);  
 END;
 /
 
 
--- agregaré un 1 ram más al mismo pedido:
-BEGIN
--- pedido, producto, cantidad
-    agregar_detalle_pedido(2, 1, 1);  
-END;
-/
+
 

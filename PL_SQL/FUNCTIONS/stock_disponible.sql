@@ -26,7 +26,7 @@ TEST:
 
 BEGIN
     DBMS_OUTPUT.PUT_LINE(
-        'Stock producto 1: ' || function_stock_disponible(1)
+        'Stock producto 1: ' || paquete_tienda_idat.function_stock_disponible(1)
     );
 END;
 
