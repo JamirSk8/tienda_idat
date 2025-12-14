@@ -53,4 +53,4 @@ BEGIN
     paquete_tienda_idat.agregar_detalle_pedido(22, 21, 1);
     paquete_tienda_idat.agregar_detalle_pedido(22, 23, 1);
 END;
-/   
+  

@@ -35,4 +35,4 @@ BEGIN
     SET total = total + (precio_unitario_actual * entrada_cantidad)
     WHERE id = entrada_pedido_id;
 END;
-/
+
