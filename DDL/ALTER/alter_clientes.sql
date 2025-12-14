@@ -1,0 +1,5 @@
+ALTER TABLE clientes
+DROP COLUMN fecha_nacimiento;
+
+ALTER TABLE clientes
+MODIFY COLUMN numero VARCHAR2(15) NOT NULL;
