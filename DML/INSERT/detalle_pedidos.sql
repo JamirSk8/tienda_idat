@@ -36,3 +36,10 @@ END;
 /
 
 
+-- agregaré un 1 ram más al mismo pedido:
+BEGIN
+-- pedido, producto, cantidad
+    agregar_detalle_pedido(2, 1, 1);  
+END;
+/
+
