@@ -3,7 +3,7 @@
 
 SELECT 
     p.producto,
-    ROUND(AVG(d.precio_unitario), 2) AS Precio_promedio_venta
+    ROUND(AVG(d.precio_unitario * d.cantidad), 2) AS Ingreso_promedio_por_venta
 
 FROM productos p
 INNER JOIN detalle_pedidos d
