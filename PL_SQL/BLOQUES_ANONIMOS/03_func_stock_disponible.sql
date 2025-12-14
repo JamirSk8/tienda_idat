@@ -5,7 +5,7 @@ SELECT * FROM vista_stock_productos;
 DECLARE
     entrada_producto productos.producto%TYPE;
     entrada_stock NUMBER;
-    entrada_producto_id NUMBER := 1; 
+    entrada_producto_id NUMBER := 1;-- <- Modificar el id del producto según se requiera 
 BEGIN
 
     SELECT p.producto
@@ -20,5 +20,5 @@ BEGIN
 
 EXCEPTION
     WHEN NO_DATA_FOUND THEN
-        DBMS_OUTPUT.PUT_LINE('No se encontrÃ³ el producto con ID: ' || entrada_producto_id);
+        DBMS_OUTPUT.PUT_LINE('No se encontró el producto con ID: ' || entrada_producto_id);
 END;
