@@ -14,5 +14,5 @@ LEFT JOIN pedidos p
 GROUP BY c.nombres, c.apellidos, c.correo, c.distrito
 ORDER BY Total_pedidos DESC
 -- TOP 5:
-FETCH FIRST 5 ROWS ONLY
+FETCH FIRST 5 ROWS WITH TIES -- para incluir empates en el 5to lugar
 ;
