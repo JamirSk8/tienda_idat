@@ -1,4 +1,6 @@
 import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
 import warnings
 
 
@@ -29,7 +31,24 @@ class Reportes:
                 warnings.filterwarnings(
                     "ignore",
                     category=UserWarning,
-                    message=r"Pandas es una nena con Oracle",
                 )
                 return pd.read_sql(query, conexion)
+            
+
+    def visualizar_pedidos_por_cliente(self):
+        df = self.pedidos_por_cliente()
+
+        print(df.columns)
+        sns.barplot(
+            data=df,
+            x= "NOMBRE",
+            y= "TOTAL_PEDIDOS"
+        )
+
+        plt.title("Total de Pedidos por Cliente")
+        plt.xticks(rotation=45)
+        plt.tight_layout()
+        plt.show()
+    
+
         
