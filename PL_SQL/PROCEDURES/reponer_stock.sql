@@ -11,3 +11,5 @@ BEGIN
     WHERE producto_id = entrada_producto_id;
 END;
 /
+
+
